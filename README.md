@@ -31,6 +31,3 @@
 3. **Run the script**:
    ```bash
    sudo ./nx_migrator.sh
-
-
-   

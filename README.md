@@ -27,9 +27,7 @@
 - **Permissions**: Script must be run with `sudo`.
 
 ## Installation
-1. **Download the Script**:
-   ```bash
-   wget https://raw.githubusercontent.com/sthetix/nx-migrator/main/nx_migrator.sh
+1. **Download the Script from the [Releases](https://github.com/sthetix/NX-Migrator/releases) page**:
 2. **Make it executable**:
    ```bash
    chmod +x nx_migrator.sh

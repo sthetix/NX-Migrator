@@ -1,5 +1,10 @@
 # NX Migrator
 
+
+<div align="center">
+  <img src="https://github.com/sthetix/NX-Migrator/blob/main/title.png" alt="NX Migrator title image">
+</div>
+
 **NX Migrator** is a Bash script that automates the migration of a Nintendo Switch SD card, including its emuMMC RAW partition and FAT32 content, to a larger SD card with enhanced safety and verification. It leverages Hekate USB Tools or dual SD card readers to ensure a reliable transfer.
 
 ## Features

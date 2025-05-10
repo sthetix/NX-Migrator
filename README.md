@@ -31,3 +31,36 @@
 3. **Run the script**:
    ```bash
    sudo ./nx_migrator.sh
+
+## Usage
+
+### Connect Devices
+- Insert the target SD card into a card reader.
+- Mount the source SD card using one of the following:
+  - Nintendo Switch in Hekate USB Tools (UMS mode) via USB connection.
+  - A single SD card reader with dual ports or a dual SD card reader.
+
+### Run the Script
+```bash
+sudo ./nx_migrator.sh [--debug]
+```
+Use --debug for verbose output (logs all commands).
+
+### Follow Prompts
+- Confirm the source and target SD card devices.
+- Choose to redump the emuMMC RAW partition or use an existing backup.
+- Verify critical actions (e.g., wiping the target SD card).
+
+### Post-Migration
+1. Insert the new SD card into the Nintendo Switch.
+2. In Hekate:
+   - Navigate to `Home > emuMMC > Migrate emuMMC > Fix RAW`.
+   - Go to `Tools > Arch Bit > Fix Archive Bit`.
+
+## Output
+- **Backup Directory**: `~/nx_migrator_backups` (stores emuMMC backup and logs).
+- **Log File**: `nx_migrator_YYYY-MM-DD_HH-MM-SS.log` (detailed process log).
+- **Warnings**:
+  - **Do not** remove the target SD card during emuMMC restore until "emuMMC restored" appears, as this may corrupt the emuMMC.
+  - Ensure the target SD card is larger than the source SD card to avoid data loss.
+
